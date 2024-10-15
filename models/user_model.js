@@ -21,7 +21,13 @@ const userSchema = mongoose.Schema({
     urls: [{
         type: mongoose.Schema.Types.ObjectId,
         ref: 'URL'
-    }]
+    }],
+    isVerified: {
+        type: Boolean,
+        default: false,
+    },
+    verificationToken: String,
+    verificationTokenExpires: Date,
 
 })
 

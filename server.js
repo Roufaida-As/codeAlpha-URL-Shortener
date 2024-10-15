@@ -8,7 +8,7 @@ const path = require('path');
 
 
 
-dotenv.config({ path: './config.env' })
+dotenv.config({ path: './.env' })
 port = process.env.port
 
 //add request body to request object(middleware)
